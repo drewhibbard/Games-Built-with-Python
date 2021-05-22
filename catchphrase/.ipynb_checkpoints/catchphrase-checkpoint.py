@@ -17,9 +17,6 @@ st.write('# Welcome to CatchPhrase!')
 
 category = st.sidebar.selectbox('Choose Category',['Everything'] + list(df.category.unique()))
 
-team1_score = 0
-team2_score = 0
-
 def get_phrase():
     if category == 'Everything': 
         return df['term'].sample(1).values[0]
